@@ -1,28 +1,88 @@
-/* class */
-.main-nav {
-    margin-top: 10px;
-    list-style: none;
-    padding-left: 0;
-    background-color: cornsilk;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-
-.main-nav__item {
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.navbar {
+    position: sticky;
+    padding: .5rem 1rem;
+    background-color: rgb(255, 245, 224);
+}
+.navbar-brand {
+    color:rgb(104, 104, 104);
+    padding: .3125rem;
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
     display: inline-block;
-}
+    line-height: inherit;
+    white-space: nowrap;
+    text-decoration: none;
+ }
+ .navbar-brand:hover {
+    color:black; 
+ }
+ .navbar-brand:active {
+    color:rgb(255, 109, 109); 
+ }
 
-.main-nav__item a {
-   color:rgb(63, 63, 63) ;
-   padding: 5px;
-   text-decoration: none; 
+ .navbar-toggler {
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    background-color: rgb(255, 230, 194);
 }
-.main-nav__item a:hover {
-    color: black;
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    background-color: rgb(255, 230, 194);
+    background-size: 100% 100%;
+    background-image: url("../imgs/toggle.png");
 }
-.main-nav__item a:active {
-    color:indianred;
+.navbar-expand-lg{
+    display: flex!important;
+    flex-basis: auto;
 }
-/* ID */
+ .navbar-collapse{
+    display: flex!important;
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+ }
+.navbar-nav{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.nav-item{
+    text-decoration: none;
+    list-style: none;
+    display: block;
+    padding: .5rem 1rem;
+    color:rgb(104, 104, 104);
+    font-size: 1rem;
+}
+.nav-link:hover {
+    color:black; 
+ }
+ .nav-link:active {
+    color:rgb(255, 109, 109); 
+ }
 
-/*#text {
-    color: blueviolet;
-}*/
+
+
+.main-info {
+    background-image: url("../imgs/trial2.jpg");
+    background-repeat: no-repeat;
+    height: 92vh;
+    background-size: cover; 
+    width: 100%;
+}
