@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 html{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .navbar {
     position: sticky;
@@ -63,9 +63,11 @@ html{
     list-style: none;
 }
 .nav-item{
-    text-decoration: none;
     list-style: none;
     display: block;
+}
+.nav-link{
+    text-decoration: none;
     padding: .5rem 1rem;
     color:rgb(104, 104, 104);
     font-size: 1rem;
@@ -77,12 +79,40 @@ html{
     color:rgb(255, 109, 109); 
  }
 
-
-
 .main-info {
     background-image: url("../imgs/trial2.jpg");
     background-repeat: no-repeat;
     height: 92vh;
     background-size: cover; 
     width: 100%;
+}
+.column{
+    width: 700px;
+    padding-left: 6rem;
+    padding-top: 4rem;
+    align-items: center;
+    column-count: 1;
+    column-width: 10px;
+}
+@media screen and (max-width: 800px) {
+    .column {
+      width: 100%;
+      padding-right: 4rem;
+    }
+}
+.column__title{
+    font-size: 40px;
+}
+.column__subtitle{
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 500; 
+}
+.column__description{
+    padding-top: 2rem;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: justify;
+    text-indent: 1.5rem;
+    line-height: 2rem;
 }
